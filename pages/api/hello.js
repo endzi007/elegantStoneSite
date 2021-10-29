@@ -1,5 +1,8 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+import fs from 'fs';
 
 export default function handler(req, res) {
-  res.status(200).json({ name: 'John Doe' })
+  let directory = fs.readdirSync("./public/images/materijali").filter((item) => item ? item.indexOf("--") === -1 : "");
+
+  res.status(200).json({ materials: directory })
 }
