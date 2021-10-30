@@ -1,20 +1,13 @@
-import { FaFacebookF, FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaPhone, FaUserAlt, FaRegEnvelope, FaLocationArrow} from "react-icons/fa";
+
 export default {
     contact: {
         generalInfo: {
-            address: "Biznis zona, Rudeš, Berane, Crna Gora",
-            phone: "(+382)68/523-530",
-            person: "Miketa Vučeljić",
-            email: "elegantstone@gmail.com"
+            address: {text: "Biznis zona, Rudeš, Berane, Crna Gora", icon: FaLocationArrow},
+            phone: {text:  "(+382)68/523-530", icon: FaPhone},
+            person: {text: "Miketa Vučeljić", icon: FaUserAlt, role: "direktor"},
+            email: {text: "elegantstone@gmail.com", icon: FaRegEnvelope}
         },
-        persons: [
-            {
-                email: "elegantstone@gmail.com",
-                phone: "(+382)68/523-530",
-                person: "Miketa Vučeljić",
-                role: "direktor"
-            }
-        ],
         socialLinks: [
             {
                 name: "Facebook",
@@ -44,10 +37,31 @@ export default {
             ]
         }
     },
-    homePage: {
-
-    },
-    gallery: {
-
+    navbar: [
+        {label: "HOME", url: "/"},
+        {label: "About", url: "/about"},
+        {label: "Gallery", url: "/gallery"},
+        {label: "Projects", url: "/projects"},
+        {label: "Contact", url: "/contact"}
+    ],
+    pages: {
+        homePage: {
+    
+        },
+        gallery: {
+    
+        },
+        contact: {
+            pageTitle: "Contact us",
+            mainHedding: "Message us for more details",
+            paragraphText: "If you have any questions, please feel free to contact us we will answer you in shortest time possible",
+            contactForm: {
+                nameText: "enter your name", 
+                emailText: "enter your email",
+                subjectText: "subject",
+                messageText: "enter your message",
+                buttonText: "Submit"
+            },
+        }
     }
 }

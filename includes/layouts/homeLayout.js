@@ -5,6 +5,7 @@ import TopHeader from '../topHeader'
 import Navbar from '../navbar'
 import Footer from '../footer'
 import PropTypes from 'prop-types'
+import data from '../../data/generalData';
 
 function HomeLayout(props) {
     return (
@@ -20,7 +21,7 @@ function HomeLayout(props) {
             </Head>
             <TopHeader />
             <LogoSection />
-            <Navbar />
+            <Navbar pages={data.navbar} />
             {props.children}
             <Footer />
         </div>

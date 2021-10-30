@@ -14,13 +14,19 @@
 }
 @screen lg {
   .websitePadding {
-    padding-left: 15vw;
-    padding-right: 15vw;
+    padding-left: calc((100vw - 1344px) / 2) !important;
+    padding-right: calc((100vw - 1344px) / 2) !important;
   }
   .footerCredit {
     clip-path: polygon(0 99%, 55% 100%, 50% 0, 0% 0%);
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+}
+@screen 3xl {
+  .websitePadding {
+    padding-left: calc((100vw - 1600px) / 2) !important;
+    padding-right: calc((100vw - 1600px) / 2) !important;
   }
 }
 
@@ -50,7 +56,15 @@ textarea {
 }
 
 body {
-  @apply bg-white bg-opacity-20;
+  @apply bg-white bg-opacity-20 items-center w-['1920px'] overflow-x-hidden;
 }
 
+.gradient {
+  background: theme("colors.bg-black");
+  background: linear-gradient(
+    90deg,
+    theme("colors.primary-color") 50%,
+    theme("colors.bg-black") 50%
+  );
+}
 @tailwind utilities;

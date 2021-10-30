@@ -3,14 +3,13 @@ import PropTypes from 'prop-types'
 import Link from 'next/link';
 import { useRouter } from 'next/dist/client/router';
 
-function Header(props) {
+
+function NavBar(props) {
+    console.log(props);
     return (
         <div className="websitePadding z-50 bg-bg-black lg:!bg-transparent lg:-mt-7">
             <div className= "text-white grid grid-flow-col auto-cols-min gap-4 lg:bg-bg-black">
-                <LinkComp href="/" label="Home" />
-                <LinkComp href="/gallery" label="gallery" />
-                <LinkComp href="/contact" label="contact" />
-                <LinkComp href="/projects" label="projects" />
+                {props.pages.map(page => <LinkComp href={page.url} label={page.label} />)}
             </div>
         </div>
     )
@@ -24,9 +23,13 @@ function LinkComp(props){
     </Link>;
 }
 
-Header.propTypes = {
+NavBar.propTypes = {
+    pages: PropTypes.arrayOf(PropTypes.shape({
+        label: PropTypes.string.isRequired,
+        url: PropTypes.string.isRequired,
+    })),
 
 }
 
-export default Header
+export default NavBar
 

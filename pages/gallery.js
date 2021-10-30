@@ -14,7 +14,7 @@ export default function Home(props) {
       <HomeLayout>
         <main className="websitePadding">
           <h1>Picture gallery</h1>
-            <Gallery galleryItems={galleryItems?.materials || []}/>
+            {/* <Gallery galleryItems={galleryItems?.materials || []}/> */}
         </main> 
       </HomeLayout>
 

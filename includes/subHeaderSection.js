@@ -5,11 +5,10 @@ import { BsAwardFill } from 'react-icons/bs'
 
 function SubHeaderSection(props) {
     return (
-        <div className="websitePadding grid md:grid-cols-3 lg:-mt-28">
+        <div className="websitePadding grid md:grid-cols-3 lg:-mt-28 h-auto min-h-[15em]">
             <SingleCard variant="dark" icon={BsAwardFill} heading="Quality Construction" text="A sm river named Duden flows by their place and supplies it with the necessary regelialia."/>
             <SingleCard icon={BsAwardFill} heading="Quality Construction" text="A sm river named Duden flows by their place and supplies it with the necessary regelialia."/>
             <SingleCard variant="dark" icon={BsAwardFill} heading="Quality Construction" text="A sm river named Duden flows by their place and supplies it with the necessary regelialia."/>
-
         </div>
     )
 }
