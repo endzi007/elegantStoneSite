@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import HomeLayout from '../includes/layouts/homeLayout'
 import data from '../data/generalData';
+import GoogleMap from '../includes/googleMap';
 
 function Contact(props) {
     return (
@@ -10,13 +11,13 @@ function Contact(props) {
                 <h5 className="text-primary-color mt-5">CONTACT US</h5>
                 <h1>Message us for more details</h1>
                 <p className="pb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia </p>
-                <div className="flex flex-col lg:!flex-row lg:flex-wrap lg:!justify-between">
-                    <form className="lg:w-2/3 grid grid-cols-1 overflow-hidden lg:!grid-cols-2 gap-4 items-start justify-start p-12 bg-gray-100">
-                        <input className="lg:col-start-1 lg:col-end-2" type="text" placeholder="enter your name"/>
-                        <input className="lg:col-start-2 lg:col-end-3" type="text" placeholder="enter your email"/>
-                        <input className="lg:col-start-1 lg:col-end-3" type="text" placeholder="Subject"/>
-                        <textarea className="lg:col-start-1 lg:col-end-3" type="text" placeholder="Enter your message" cols="40" rows="5" />
-                        <input className="bg-primary-color text-primary-contrast-text font-bold py-2 px-4 rounded-lg" type="submit" aria-label="Submit"/>
+                <div className="flex flex-col lg:!flex-row lg:flex-wrap lg:!justify-between lg:!">
+                    <form action="https://formsubmit.co/igraonicadecom@gmail.com" method="POST" className="lg:w-2/3 grid grid-cols-1 overflow-hidden lg:!grid-cols-2 gap-4 items-start justify-start p-12 bg-gray-100">
+                        <input name="name" className="lg:col-start-1 lg:col-end-2" type="text" placeholder="enter your name"/>
+                        <input name="email" className="lg:col-start-2 lg:col-end-3" type="text" placeholder="enter your email"/>
+                        <input name="subject" className="lg:col-start-1 lg:col-end-3" type="text" placeholder="Subject"/>
+                        <textarea name="message" className="lg:col-start-1 lg:col-end-3" type="text" placeholder="Enter your message" cols="40" rows="5" />
+                        <input name="submit" className="bg-primary-color text-primary-contrast-text font-bold py-2 px-4 rounded-lg" type="submit" aria-label="Submit"/>
                     </form>
                     <div className="lg:w-1/3 p-8 space-y-3">
                         {console.log(data)}
@@ -24,6 +25,9 @@ function Contact(props) {
 
                     </div>
                 </div>
+            </div>
+            <div className="h-96 overflow-hidden">
+                <GoogleMap />
             </div>
         </HomeLayout>
     )
