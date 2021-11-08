@@ -47,7 +47,7 @@ h5 {
 }
 
 p {
-  @apply text-gray-700;
+  @apply text-gray-800;
 }
 
 form input[type="text"],
@@ -67,4 +67,9 @@ body {
     theme("colors.bg-black") 50%
   );
 }
+
+a.css-11cewt9 {
+  display: none !important;
+}
+
 @tailwind utilities;

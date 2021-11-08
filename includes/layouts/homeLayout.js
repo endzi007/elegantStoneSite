@@ -18,8 +18,9 @@ function HomeLayout(props) {
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
                 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"></link>
                 <script src="https://unpkg.com/rive-js@0.7.16/dist/rive.min.js"></script>
+                <script src="https://cdn2.woxo.tech/a.js#61851848ce106e0016778129" async data-usrc></script>
             </Head>
-            <TopHeader />
+            <TopHeader socialLinks={data.contact.socialLinks} email={data.contact.generalInfo.email}/>
             <LogoSection />
             <Navbar pages={data.navbar} />
             {props.children}

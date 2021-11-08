@@ -27,14 +27,14 @@ const WidgetAbout = (props)=>{
   return <div className="flex flex-col p-3">
     <h3>{props.title}</h3>
     <p className="text-gray-400 mb-4">{props.text}</p>
-    <div className="flex">{props.links.map(link => <IconButton href={link.href} icon={<link.icon />} title="" />)}</div>
+    <div className="flex">{props.links.map(link => <IconButton key={"key_"+link.href} href={link.href} icon={link.icon} title="" />)}</div>
   </div>
 }
 
 const Links = (props)=>{
   return <div className="flex flex-col p-3">
     <h3>Links</h3>
-    <div className="flex flex-col">{props.links.map(link => <a className="flex flex-row items-center text-gray-400 mb-1" href={link.href}>
+    <div className="flex flex-col">{props.links.map(link => <a key={"key_" + link.href} className="flex flex-row items-center text-gray-400 mb-1" href={link.href}>
       <span><MdArrowForwardIos /></span>{link.label}</a>)}</div>
   </div>
 }

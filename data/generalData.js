@@ -1,4 +1,4 @@
-import { FaFacebookF, FaTwitter, FaPhone, FaUserAlt, FaRegEnvelope, FaLocationArrow} from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaPhone, FaUserAlt, FaRegEnvelope, FaLocationArrow, FaInstagram} from "react-icons/fa";
 
 export default {
     contact: {
@@ -18,6 +18,11 @@ export default {
                 name: "Twitter",
                 icon: FaTwitter,
                 href: "https://www.twitter.com"
+            },
+            {
+                name: "Instagram",
+                icon: FaInstagram,
+                href: "https://www.instagram.com"
             }
         ]
     },
@@ -40,7 +45,7 @@ export default {
     navbar: [
         {label: "HOME", url: "/"},
         {label: "About", url: "/about"},
-        {label: "Gallery", url: "/gallery"},
+        {label: "Materials", url: "/materials"},
         {label: "Projects", url: "/projects"},
         {label: "Contact", url: "/contact"}
     ],

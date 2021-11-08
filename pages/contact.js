@@ -20,7 +20,6 @@ function Contact(props) {
                         <input name="submit" className="bg-primary-color text-primary-contrast-text font-bold py-2 px-4 rounded-lg" type="submit" aria-label="Submit"/>
                     </form>
                     <div className="lg:w-1/3 p-8 space-y-3">
-                        {console.log(data)}
                         {Object.keys(data.contact.generalInfo).map((item) => <SingleItem heading={item} text={data.contact.generalInfo[item].text} icon={data.contact.generalInfo[item].icon}/>)}
 
                     </div>

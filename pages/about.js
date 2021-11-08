@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import HomeLayout from '../includes/layouts/homeLayout'
-import { ImLocation } from 'react-icons/im'
 
 function About(props) {
     return (

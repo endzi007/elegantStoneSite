@@ -28,7 +28,7 @@ function SingleCard(props){
         <div style={{ width: "150%", height: "150%"}} className="top-0 left-0 absolute bg-white opacity-10 h- transform translate-x-1/3 translate-y-3 rotate-12"></div>
         <div>
             <h4 className="text-3xl mb-5 text-white">{props.heading}</h4>
-            <p>{props.text}</p>
+            <p className={props.variant === "dark"? "text-bg-black-contrast-text": "text-primary-contrast-text"}>{props.text}</p>
         </div>
     </div>
 }

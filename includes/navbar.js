@@ -5,11 +5,10 @@ import { useRouter } from 'next/dist/client/router';
 
 
 function NavBar(props) {
-    console.log(props);
     return (
         <div className="websitePadding z-50 bg-bg-black lg:!bg-transparent lg:-mt-7">
             <div className= "text-white grid grid-flow-col auto-cols-min gap-4 lg:bg-bg-black">
-                {props.pages.map(page => <LinkComp href={page.url} label={page.label} />)}
+                {props.pages.map(page => <LinkComp key={"key" + page.url} href={page.url} label={page.label} />)}
             </div>
         </div>
     )

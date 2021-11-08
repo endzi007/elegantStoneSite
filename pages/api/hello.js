@@ -2,7 +2,7 @@
 import fs from 'fs';
 
 export default function handler(req, res) {
-  let directory = fs.readdirSync("./public/images/materijali").filter((item) => item ? item.indexOf("--") === -1 : "");
+/*   let directory = fs.readdirSync("./public/images/").filter((item) => item ? item.indexOf("--") === -1 : "");
 
-  res.status(200).json({ materials: directory })
+  res.status(200).json({ materials: directory }) */
 }

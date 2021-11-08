@@ -12,6 +12,9 @@ export default function Home() {
           <SubHeaderSection />
           <PostSection />
           <SplitSection />
+          <div className="websitePadding">
+          <div loading="lazy" data-mc-src="bf80ba50-ccbe-451c-8709-3deb5f264625#instagram"></div>
+          </div>
       </HomeLayout>
 
   )
