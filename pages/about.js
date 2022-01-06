@@ -6,7 +6,7 @@ function About(props) {
     return (
         <HomeLayout title="About | ElegantStone doo Berane">
             <div className="websitePadding flex flex-col text-center py-8">
-               
+                This is about us page
             </div>
         </HomeLayout>
     )

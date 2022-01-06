@@ -68,8 +68,8 @@ body {
   );
 }
 
-a.css-11cewt9 {
-  display: none !important;
+.css-11cewt9[style]{
+  @apply hidden;
 }
 
 @tailwind utilities;

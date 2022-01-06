@@ -6,7 +6,7 @@ function Contact(props) {
     return (
         <HomeLayout title="Projects | ElegantStone doo Berane">
             <div className="websitePadding">
-                Projects Page
+                This is projects page
             </div>
         </HomeLayout>
     )
