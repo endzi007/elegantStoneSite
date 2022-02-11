@@ -16,7 +16,8 @@ module.exports = {
         'bg-black-contrast-text': 'rgba(255, 255, 255, 0.8)',
       },
       fontFamily: {
-        sans: ["Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"]
+        sans: ["Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"],
+        ptext: ["Popins", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"]
       },
       width: {
         "100vw": "100vw",
@@ -31,7 +32,7 @@ module.exports = {
       },
       gridTemplateColumns: {
         // Simple 16 column grid
-       '1-2': '1fr 2fr',
+        '1-2': '1fr 2fr',
       },
       backgroundImage: {
         "body-dark": "url(/images/background-dark.jpg)",
