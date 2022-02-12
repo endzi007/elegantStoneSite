@@ -17,7 +17,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Roboto", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"],
-        ptext: ["Popins", "Helvetica Neue", "Arial", "Noto Sans", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"]
+        ptext: ["Poppins", "sans-serif"]
       },
       width: {
         "100vw": "100vw",

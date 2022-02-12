@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind screens;
@@ -44,11 +45,12 @@ h4 {
   @apply font-bold tracking-wider text-2xl;
 }
 h5 {
-  @apply font-bold tracking-wider text-xl py-4;
+  font-family: 'Inter', sans-serif;
+  @apply font-extrabold tracking-wider text-xl py-4;
 }
 
 p {
-  @apply text-gray-800 font-ptext;
+  @apply font-ptext;
 }
 
 form input[type="text"],
