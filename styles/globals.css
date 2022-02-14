@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind screens;
@@ -69,6 +70,11 @@ body {
     theme("colors.primary-color") 50%,
     theme("colors.bg-black") 50%
   );
+}
+
+.scriptHeading {
+  font-family: 'Dancing Script', cursive;
+  @apply text-primary-color; 
 }
 
 .css-11cewt9[style]{
