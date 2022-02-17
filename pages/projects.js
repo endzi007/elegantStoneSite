@@ -15,7 +15,7 @@ export default function Projects(props) {
 
 }
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
 
     const fs = (await import("fs")).default
     let pictures = {};
