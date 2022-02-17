@@ -51,7 +51,7 @@ h5 {
 }
 
 p {
-  @apply font-ptext;
+  @apply font-ptext text-sm leading-6;
 }
 
 form input[type="text"],
@@ -79,6 +79,13 @@ body {
 
 .css-11cewt9[style]{
   @apply hidden;
+}
+
+.transitionClass {
+  transition: all 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 @tailwind utilities;

@@ -12,7 +12,7 @@ export default {
             {
                 name: "Facebook",
                 icon: FaFacebookF,
-                href: "https://www.facebook.com"
+                href: "https://www.facebook.com/elegantStoneBerane/"
             },
             {
                 name: "Twitter",
@@ -22,7 +22,7 @@ export default {
             {
                 name: "Instagram",
                 icon: FaInstagram,
-                href: "https://www.instagram.com"
+                href: "https://www.instagram.com/elegantstone.berane/"
             }
         ]
     },

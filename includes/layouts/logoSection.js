@@ -3,33 +3,33 @@ import { BsFillMapFill } from 'react-icons/bs'
 import { FaPaperPlane } from 'react-icons/fa'
 
 export default function LogoSection() {
-    return (
-        <div className="grid text-primary-color gap-1 h-full bg-white websitePadding py-8 md:grid-cols-3 lg:!py-10">
-            <div className="relative h-full flex flex-row items-center justify-items-start">
-                <LogoSvg />
-                <h2 className="text-3xl text-bg-black font-sans font-bold tracking-wide"> ElegantStone</h2>
-            </div>
-            <div className="flex flex-row items-center">
-                <div className="flex p-3 border mr-2">
-                    <BsFillMapFill/>
-                </div>
-                <div className="text-sm font-bold">
-                    <p>tel: <span className="text-gray-900">+382 68 517-422</span></p>
-                    <p className="text-gray-400 font-thin">email: elegantstone@gmail.com</p>
-                </div>
-            </div>
-            <div className="flex flex-row items-center">
-                <div className="flex p-3 border mr-2">
-                    <FaPaperPlane/>
-                </div>
-                <div className="text-sm font-bold">
-                    <p><span className="text-gray-900">Address:</span></p>
-                    <p className="text-gray-400 font-thin">Biznis zona, Rudeš, Berane, Crna Gora</p>
-                </div>
-            </div>
-
+  return (
+    <div className="grid text-primary-color gap-1 h-full bg-white websitePadding py-8 md:justify-center md:grid-cols-3 lg:!py-10">
+      <div className="relative h-full flex flex-row items-center justify-items-start">
+        <LogoSvg />
+        <h2 className="text-3xl text-bg-black font-sans font-bold tracking-wide"> ElegantStone</h2>
+      </div>
+      <div className="flex flex-row items-center">
+        <div className="flex p-3 border mr-2">
+          <BsFillMapFill />
         </div>
-    )
+        <div className="text-sm font-bold">
+          <p>tel: <span className="text-gray-900">+382 68 517-422</span></p>
+          <p className="text-gray-400 font-thin">email: elegantstone@gmail.com</p>
+        </div>
+      </div>
+      <div className="flex flex-row items-center">
+        <div className="flex p-3 border mr-2">
+          <FaPaperPlane />
+        </div>
+        <div className="text-sm font-bold">
+          <p><span className="text-gray-900">Address:</span></p>
+          <p className="text-gray-400 font-thin">Biznis zona, Rudeš, Berane, Crna Gora</p>
+        </div>
+      </div>
+
+    </div>
+  )
 }
 
 

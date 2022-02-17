@@ -5,6 +5,7 @@ import SplitSection from '../includes/splitSection'
 import SubHeaderSection from '../includes/subHeaderSection'
 import styles from '../styles/layouts/Home.module.css'
 import WhoWeAre from '../includes/whoWeAre'
+import WorkWithUS from '../includes/workWithUS'
 
 
 export default function Home() {
@@ -19,7 +20,8 @@ export default function Home() {
           <div className={styles.camuflage}></div>
         </div>
       </div>
-      <PostSection />
+      <WorkWithUS />
+      {/* <PostSection /> */}
     </HomeLayout>
   )
 }
