@@ -2,15 +2,31 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'next/link';
 import { useRouter } from 'next/dist/client/router';
+import ExpandablePanel from './buildingBlocks/expandablePanel';
+import { FiMenu } from 'react-icons/fi'
+import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
+
 
 
 function NavBar(props) {
     return (
-        <div className="websitePadding z-50 bg-bg-black lg:!bg-transparent lg:-mt-7">
-            <div className="text-white grid grid-flow-col auto-cols-min gap-4 lg:bg-bg-black">
-                {props.pages.map(page => <LinkComp key={"key" + page.url} href={page.url} label={page.label} />)}
+        <>
+            <div className="websitePadding z-50 bg-bg-black sm:block lg:-mt-7 lg:!bg-transparent">
+                <div className="text-white grid-flow-col auto-cols-min gap-4 lg:bg-bg-black hidden md:!grid ">
+                    {props.pages.map(page => <LinkComp key={"key" + page.url} href={page.url} label={page.label} />)}
+                </div>
+                <div className='block md:!hidden'>
+                    <ExpandablePanel IconOpen={<AiOutlineMenu />} IconClose={<AiOutlineClose />} title='Menu' classes='text-white'>
+                        <div className="text-white flex flex-col lg:bg-bg-black">
+                            {props.pages.map(page => <LinkComp key={"key" + page.url} href={page.url} label={page.label} />)}
+                        </div>
+                    </ExpandablePanel>
+                </div>
+
             </div>
-        </div>
+        </>
+
+
     )
 }
 

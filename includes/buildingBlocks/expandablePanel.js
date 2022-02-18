@@ -3,7 +3,8 @@ import PropTypes from 'prop-types'
 import { BsPlusSquare } from 'react-icons/bs'
 import { FiMinusSquare } from 'react-icons/fi'
 
-export default function ExpandablePanel({ title, children }) {
+
+export default function ExpandablePanel({ title, children, classes, IconOpen, IconClose }) {
     const [open, setOpen] = useState(false);
     const myRef = useRef(null);
     const innerRef = useRef(null);
@@ -24,16 +25,16 @@ export default function ExpandablePanel({ title, children }) {
     }, []);
 
     return (
-        <div className="container shadow-md px-6">
+        <div className={`shadow-md px-6 sm:px-1 ${classes || ""}`}>
             <div className="flex flex-col">
                 <div
-                    className="cursor-pointer flex flex-row content-end p-3 justify-between items-center "
+                    className="cursor-pointer flex flex-row py-3 justify-between items-center w-full "
                     onClick={(e) => {
                         setOpen(!open);
                     }}
                 >
                     <h4 className="">{title}</h4>
-                    {!open ? <BsPlusSquare /> : <FiMinusSquare />}
+                    {!open ? IconOpen || <BsPlusSquare /> : IconClose || <FiMinusSquare />}
                 </div>
                 <div
                     className="transitionClass"
@@ -63,5 +64,7 @@ ExpandablePanelWrapper.propTypes = {
 }
 
 ExpandablePanel.propTypes = {
-    title: PropTypes.string.isRequired
+    title: PropTypes.string.isRequired,
+    classes: PropTypes.string,
+
 }

@@ -4,7 +4,7 @@ import { FaPaperPlane } from 'react-icons/fa'
 
 export default function LogoSection() {
   return (
-    <div className="grid text-primary-color gap-1 h-full bg-white websitePadding py-8 md:justify-center md:grid-cols-3 lg:!py-10">
+    <div className="grid text-primary-color gap-1 h-full websitePadding py-8 md:justify-center md:grid-cols-3 lg:!py-10">
       <div className="relative h-full flex flex-row items-center justify-items-start">
         <LogoSvg />
         <h2 className="text-3xl text-bg-black font-sans font-bold tracking-wide"> ElegantStone</h2>

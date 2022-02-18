@@ -1,7 +1,6 @@
 import React from 'react'
 import data from '../data/generalData'
 import IconButton from './buildingBlocks/iconButton'
-import { FaPaperPlane } from "react-icons/fa";
 import { MdArrowForwardIos } from 'react-icons/md'
 
 export default function Footer() {
@@ -27,14 +26,13 @@ const WidgetAbout = (props) => {
   return <div className="flex flex-col p-3">
     <h3>{props.title}</h3>
     <p className="text-gray-400 mb-4">{props.text}</p>
-    <div className="flex">{props.links.map(link => <IconButton key={"key_" + link.href} href={link.href} icon={link.icon} title="" />)}</div>
+    <div className="flex">{props.links.map(link => <IconButton classes='bg-gray-300' key={"key_" + link.href} href={link.href} icon={link.icon} title="" />)}</div>
   </div>
 }
 
 const Links = (props) => {
   return <div className="flex flex-col p-3">
     <h3>Links</h3>
-    <div className="flex flex-col">{props.links.map(link => <a key={"key_" + link.href} className="flex flex-row items-center text-gray-400 mb-1" href={link.href}>
-      <span><MdArrowForwardIos /></span>{link.label}</a>)}</div>
+    <div className="flex flex-col">{props.links.map(link => <IconButton icon={MdArrowForwardIos} title={link.label} key={"key_" + link.href} className="flex flex-row items-center mb-1" href={link.href}></IconButton>)}</div>
   </div>
 }
