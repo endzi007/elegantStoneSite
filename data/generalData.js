@@ -15,11 +15,6 @@ export default {
                 href: "https://www.facebook.com/elegantStoneBerane/"
             },
             {
-                name: "Twitter",
-                icon: FaTwitter,
-                href: "https://www.twitter.com"
-            },
-            {
                 name: "Instagram",
                 icon: FaInstagram,
                 href: "https://www.instagram.com/elegantstone.berane/"
@@ -30,7 +25,7 @@ export default {
         widgets: {
             about: {
                 headingText: "O nama",
-                paragraphTekst: "Ovo je text o nama"
+                paragraphTekst: "ElegantStone pruža najbolji kvalitet proizvoda, korisničku podršku i podršku u regionu. Kod nas možete naći dekorativni kamen u skladu sa vašim ukusom i budžetom"
             },
             links: [
                 { label: "Početna", href: "/" },

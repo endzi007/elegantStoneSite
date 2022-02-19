@@ -34,10 +34,10 @@
 }
 
 h1 {
-  @apply font-bold text-5xl py-6;
+  @apply font-bold text-5xl py-6 tracking-wider;
 }
 h2 {
-  @apply font-bold text-4xl py-6;
+  @apply font-bold text-4xl py-6 tracking-wider;
 }
 h3 {
   @apply font-bold tracking-wider text-3xl;

@@ -7,7 +7,7 @@ import ExpandablePanel, { ExpandablePanelWrapper } from '../includes/buildingBlo
 
 function About(props) {
     let arrayOfPanels = [
-        <ExpandablePanel title="Ko smo mi?">
+        <ExpandablePanel title="Ko smo mi?" classes='bg-white mb-1'>
             <p className='text-sm leading-6'>
                 Mi smo kompanija koja je osnovana 2018. godine, a nalazimo se u Crnoj Gori. U ponudi imamo granit, kvarc i drugi dekorativni kamen koji se koristi za dekoraciju domova i kancelarija.
                 Mi smo mlada i dinamična kompanija sa sedištem u Beranama (Crna Gora), koja je pozicionirana među najvećim kompanijama za preradu kamena u regionu. Imamo ogromno iskustvo, znanje i kvalitetne proizvode koji nam omogućavaju da budemo lideri u ovom poslu.
@@ -15,7 +15,7 @@ function About(props) {
                 Sa granitom radimo od kada smo otvorili svoja vrata, tako da možete biti sigurni da ćete od nas dobiti samo materijale vrhunskog kvaliteta.
             </p>
         </ExpandablePanel>,
-        <ExpandablePanel title="Kvalitet kojem možete verovati">
+        <ExpandablePanel title="Kvalitet kojem možete verovati" classes='bg-white mb-1'>
             <p> ElegantStone pruža najbolji kvalitet proizvoda, korisničku podršku i podršku u regionu.
                 Naši proizvodi su najvišeg kvaliteta i nudimo odličnu korisničku uslugu i podršku. Činimo sve što možemo da osiguramo da dobijete proizvod koji će trajati.
                 Već neko vreme smo u industriji dekorativnog kamena i znamo šta je potrebno našim kupcima. Nudimo razne usluge u ovoj industriji i nadamo se da možemo pomoći da vaše poslovanje raste uz pomoć originalnog sadržaja.
@@ -26,7 +26,7 @@ function About(props) {
                 Nalazimo se u Beranama u Crnoj Gori, ali naši proizvodi se šalju širom Crne Gore. Možemo vam ponuditi širok spektar boja i oblika koji će zadovoljiti vaše potrebe.
             </p>
         </ExpandablePanel>,
-        <ExpandablePanel title="Koje su prednosti kupovine od vas?">
+        <ExpandablePanel title="Koje su prednosti kupovine od vas?" classes='bg-white mb-1'>
             <p>
                 <ul>
                     <li>Nudimo širok izbor proizvoda koji odgovaraju svakom kupcu</li>
@@ -35,7 +35,7 @@ function About(props) {
                 </ul>
             </p>
         </ExpandablePanel>,
-        <ExpandablePanel title="Zašto bih izabrao vašu kompaniju">
+        <ExpandablePanel title="Zašto bih izabrao vašu kompaniju" classes='bg-white mb-1'>
             <p>Ne možete biti sigurni šta vaša konkurencija nudi, ali možete biti sigurni u reputaciju koju ćete imati kod nas.
                 Naš tim posluje više godina.
                 Mi smo etablirana kompanija sa dokazanim iskustvom.
@@ -52,7 +52,7 @@ function About(props) {
         <HomeLayout title="About | ElegantStone doo Berane">
             <div className="flex flex-col pt-3">
                 <div className='websitePadding p-10 flex flex-col items-center'>
-                    <h1 className='border-b-2 mb-10 block w-1/4 text-center whitespace-nowrap'>O nama</h1>
+                    <h1 className='border-b-2 border-primary-color mb-10 text-center whitespace-nowrap'>O nama</h1>
                 </div>
                 <div className='grid sm:grid-cols-1 lg:grid-cols-2 lg:gap-10 websitePadding pb-6'>
                     <div className='relative pb-[100%]'>
@@ -61,7 +61,6 @@ function About(props) {
 
                     <div>
                         <ExpandablePanelWrapper panels={arrayOfPanels} />
-
                     </div>
                 </div>
             </div >
