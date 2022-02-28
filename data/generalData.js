@@ -1,12 +1,14 @@
-import { FaFacebookF, FaTwitter, FaPhone, FaUserAlt, FaRegEnvelope, FaLocationArrow, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaTwitter, FaPhone, FaUserAlt, FaRegEnvelope, FaLocationArrow, FaInstagram, FaCalendarTimes } from "react-icons/fa";
 
 export default {
     contact: {
         generalInfo: {
             address: { text: "Biznis zona, Rudeš, Berane, Crna Gora", icon: FaLocationArrow, label: "Adresa" },
-            phone: { text: "(+382)68/523-530", icon: FaPhone, label: "Telefon" },
-            person: { text: "Miketa Vučeljić", icon: FaUserAlt, role: "direktor", label: "Pozicija" },
-            email: { text: "elegantstone@gmail.com", icon: FaRegEnvelope, label: "Email" }
+            phone: { text: "(+382)68/820-941", icon: FaPhone, label: "Telefon" },
+            phone2: { text: "(+382)68/261-553", icon: FaPhone, label: "Telefon" },
+           /*  person: { text: "Miketa Vučeljić", icon: FaUserAlt, role: "direktor", label: "Pozicija" }, */
+            email: { text: "elegantstone@gmail.com", icon: FaRegEnvelope, label: "Email" },
+            workTime: {text: "08:00h - 16:00h", icon: FaCalendarTimes, label: "Radno vrijeme"}
         },
         socialLinks: [
             {
@@ -33,8 +35,8 @@ export default {
                 { label: "Materijali", href: "/materials" },
                 { label: "Projekti", href: "/projects" },
                 { label: "Kontakt", href: "/contact" },
-
-            ]
+            ],
+            services: ["Prodaja dekorativnog kamena", "Obrada i ugradnja", "Distribucija i dostava gotovog proizvoda", "Oblaganje grobnica", "Izrada spomenika", "Izrada kuhinjskih radnih ploča, šankova..." ]
         }
     },
     navbar: [

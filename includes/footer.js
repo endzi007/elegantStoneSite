@@ -12,16 +12,12 @@ export default function Footer() {
         <Links links={data.footer.widgets.links} />
         <div className='p-3'>
           <h3 className='pb-6'> Servisi </h3>
-          <p className='flex items-center'> <FcCheckmark className='mr-3' /> Prodaja dekorativnog kamena </p>
-          <p className='flex items-center'> <FcCheckmark className='mr-3' /> Obrada i ugradnja </p>
-          <p className='flex items-center'> <FcCheckmark className='mr-3' />  Distribucija i dostava gotovog proizvoda</p>
-          <p className='flex items-center'> <FcCheckmark className='mr-3' /> Oblaganje nadgrobnih spomenika </p>
-          <p className='flex items-center'> <FcCheckmark className='mr-3' /> Oblaganje nadgrobnih spomenika </p>
-          <p className='flex items-center'> <FcCheckmark className='mr-3' />  Oblaganje nadgrobnih spomenika </p>
+          {data.footer.widgets.services.map(serv => <p className='flex items-center'> <FcCheckmark className='mr-3' />{serv}</p>)}
+
         </div>
         <div className='p-3'>
           <h3 className='pb-6'> Info </h3>
-          <p className='flex items-center'> <FcOvertime className='mr-3' /> Radno vrijeme: 08:00h - 16:00h</p>
+          <p className='flex items-center'> <FcOvertime className='mr-3' /> {data.contact.generalInfo.workTime.label} : {data.contact.generalInfo.workTime.text}</p>
           <p className='flex items-center'> <FcSms className='mr-3' /> <a href={data.contact.generalInfo.email.text}>{data.contact.generalInfo.email.text}</a>  </p>
           <p className='flex items-center'> <FcCellPhone className='mr-3' />  {data.contact.generalInfo.phone.text} </p>
           <p className='flex items-center'> <FcOvertime className='mr-3' /> {data.contact.generalInfo.address.text} </p>
@@ -30,7 +26,7 @@ export default function Footer() {
       <div
         className="footerCredit bg-primary-color w-full min-h-full h-20 websitePadding text-bg-black-contrast-text items-center gap-2"
       >
-        <div className='px-5'>Copyright 2021 All rights reserved | This website is made by <span> <a className="text-bg-black font-bold" href="https://www.enisjasarovic.com">Enis J.</a></span></div>
+        <div className='px-5'>Copyright {new Date().getFullYear()}. - All rights reserved | This website is made by <span> <a className="text-bg-black font-bold" href="https://www.enisjasarovic.com">Enis J.</a></span></div>
         <div></div>
 
       </div>

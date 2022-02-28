@@ -6,8 +6,10 @@ import Navbar from '../navbar'
 import Footer from '../footer'
 import PropTypes from 'prop-types'
 import data from '../../data/generalData';
+import LogoSvg from '../buildingBlocks/LogoSVG'
 
 function HomeLayout(props) {
+    const { email, address, phone } = data.contact.generalInfo
     return (
         <div className="max-w-full box-border pt-14 flex flex-col mx-auto w-100vw overflow-x-hidden border min-h-screen">
             <Head>
@@ -20,8 +22,8 @@ function HomeLayout(props) {
                 <script src="https://unpkg.com/rive-js@0.7.16/dist/rive.min.js"></script>
                 <script src="https://cdn2.woxo.tech/a.js#61851848ce106e0016778129" async data-usrc></script>
             </Head>
-            <TopHeader socialLinks={data.contact.socialLinks} email={data.contact.generalInfo.email}/>
-            <LogoSection />
+            <TopHeader socialLinks={data.contact.socialLinks} email={email}/>
+            <LogoSection address={address.text} email={email.text} logo={<LogoSvg />} phone={phone.text} logoText="ElegantStone" />
             <Navbar pages={data.navbar} />
             {props.children}
             <Footer />
