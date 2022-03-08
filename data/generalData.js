@@ -5,7 +5,7 @@ export default {
         generalInfo: {
             address: { text: "Biznis zona, Rudeš, Berane, Crna Gora", icon: FaLocationArrow, label: "Adresa" },
             phone: { text: "(+382)68/820-941", icon: FaPhone, label: "Telefon" },
-            phone2: { text: "(+382)68/261-553", icon: FaPhone, label: "Telefon" },
+            phone2: { text: "(+382)69/261-553", icon: FaPhone, label: "Telefon" },
            /*  person: { text: "Miketa Vučeljić", icon: FaUserAlt, role: "direktor", label: "Pozicija" }, */
             email: { text: "elegantstone@gmail.com", icon: FaRegEnvelope, label: "Email" },
             workTime: {text: "08:00h - 16:00h", icon: FaCalendarTimes, label: "Radno vrijeme"}
