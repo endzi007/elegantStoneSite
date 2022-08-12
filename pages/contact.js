@@ -12,7 +12,7 @@ function Contact(props) {
                 <h1>{data.pages.contact.mainHedding}</h1>
                 <p className="pb-4">{data.pages.contact.paragraphText}</p>
                 <div className="flex flex-col lg:!flex-row lg:flex-wrap lg:!justify-between lg:!">
-                    <form action="https://formsubmit.co/igraonicadecom@gmail.com" method="POST" className="lg:w-2/3 grid grid-cols-1 overflow-hidden lg:!grid-cols-2 gap-4 items-start justify-start p-12 bg-gray-100">
+                    <form action="https://formsubmit.co/elegantstone.ba@gmail.com" method="POST" className="lg:w-2/3 grid grid-cols-1 overflow-hidden lg:!grid-cols-2 gap-4 items-start justify-start p-12 bg-gray-100">
                         <input name="name" className="lg:col-start-1 lg:col-end-2" type="text" placeholder={data.pages.contact.contactForm.nameText} />
                         <input name="email" className="lg:col-start-2 lg:col-end-3" type="text" placeholder={data.pages.contact.contactForm.emailText} />
                         <input name="subject" className="lg:col-start-1 lg:col-end-3" type="text" placeholder={data.pages.contact.contactForm.subjectText} />
