@@ -27,7 +27,7 @@ export default {
         widgets: {
             about: {
                 headingText: "O nama",
-                paragraphTekst: "ElegantStone pruža najbolji kvalitet svih vrsta dekorativnog kamena (mermer, granit, kvarc...), korisničku podršku i podršku u regionu. Kod nas možete naći dekorativni kamen u skladu sa vašim ukusom i budžetom"
+                paragraphTekst: "ElegantStone pruža najbolji kvalitet različitih vrsta dekorativnog kamena (mermer, granit, kvarc...), korisničku podršku i podršku u regionu. Kod nas možete naći dekorativni kamen u skladu sa vašim ukusom i budžetom"
             },
             links: [
                 { label: "Početna", href: "/" },
